@@ -32,7 +32,6 @@ body {
 }
 
 .nav .position {
-  width: 1rem;
   font-size: 0.3rem;
   margin-right: 0.2rem;
 }
@@ -91,6 +90,12 @@ body {
   width: 0.4rem;
   height: 0.4rem;
   background-size: cover;
+}
+
+#view{
+  position: relative;
+  overflow: auto;
+  width: 100%;
 }
 
 /* banner */
@@ -445,9 +450,6 @@ body {
   width: 100%;
   border-bottom: none;
   border-top: 1px solid #ccc;
-  position: fixed;
-  left: 0;
-  bottom: 0;
   background-color: #fff;
 }
 .foot-list ul{
@@ -477,6 +479,7 @@ body {
   font-size: 0;
   border-radius: 50%;
   overflow: hidden;
+  display: none;
 }
 .cb img{
   width: 0.65rem;
