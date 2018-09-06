@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-size: 0.2rem;
+}
+.mb1{
+  margin-bottom: 0.1rem;
+}
+.mr5{
+  margin-right: 0.05rem;
+}
+.ml5{
+  margin-left: 0.05rem;
+}
+.nav {
+  width: 100%;
+  height: 0.85rem;
+  border-bottom: 1px solid #dedede;
+  font-size: 0.3rem;
+  color: #d00;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav .position {
+  width: 1rem;
+  font-size: 0.3rem;
+  margin-right: 0.2rem;
+}
+
+.nav .search {
+  position: relative;
+}
+
+.nav .search:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.06rem;
+  border: 0.02rem solid #999;
+  border-radius: 50%;
+  left: 0.16rem;
+  width: 0.16rem;
+  height: 0.16rem;
+}
+
+.nav .search:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.21rem;
+  background-color: #999;
+  left: 0.33rem;
+  width: 0.02rem;
+  height: 0.1rem;
+  transform: rotate(-45deg);
+}
+
+.nav .search input {
+  display: block;
+  height: 0.4rem;
+  width: 4.75rem;
+  border: none;
+  outline: none;
+  font-size: 0.16rem;
+  background-color: #dedede;
+  border-radius: 0.2rem;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+}
+
+.nav .message {
+  background: url(../images/message.png) no-repeat 0 0;
+}
+
+.nav .shopCar {
+  background: url(../images/shopCar.png) no-repeat 0 0;
+}
+
+.nav .message,
+.nav .shopCar {
+  width: 0.4rem;
+  height: 0.4rem;
+  background-size: cover;
+}
+
+/* banner */
+.banner {
+  margin-top: 0.07rem;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.banner .ban-img li {
+  display: none;
+}
+
+.banner .ban-img .active {
+  display: block;
+}
+
+.banner .ban-cir {
+  position: absolute;
+  width: 0.54rem;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0.1rem;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.banner .ban-cir li {
+  width: 0.11rem;
+  height: 0.11rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.banner .ban-cir .current{
+  background-color: #fff;
+  opacity: 1;
+}
+
+/* serve-list */
+.serve-list {
+  height: 1.6rem;
+  box-sizing: border-box;
+  border-bottom: 0.1rem solid #dedede;
+}
+
+.serve-list ul {
+  width: 5.97rem;
+  height: 1.6rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.serve-list ul li {
+  text-align: center;
+  font-size: 0;
+}
+
+.serve-list ul li img {
+  width: 1rem;
+  vertical-align: top;
+  margin-top: 0.1rem;
+}
+
+.serve-list ul li span {
+  display: block;
+  font-size: 0.24rem;
+}
+
+/* content1 */
+.content1 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.1rem;
+  height: 2.9rem;
+  border-bottom: 0.1rem solid #dedede;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.24rem;
+  color: #8e8e8e;
+}
+
+.content1 h2 {
+  font-weight: normal;
+  font-size: 0.28rem;
+  margin-top: 0.3rem;
+}
+
+.content1 .con1-left {
+  width: 50%;
+  border-right: 1px solid #dedede;
+  box-sizing: border-box;
+}
+
+.content1 .con1-left h2{
+  color: #ff5c5c;
+}
+.content1 .con1-left img {
+  width: 100%;
+  padding-right: 0.1rem;
+  box-sizing: border-box;
+}
+
+.content1 .con1-right {
+  width: 50%;
+}
+
+.content1 .con1-right .c1r-top {
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dedede;
+  display: flex;
+}
+.content1 .con1-right .c1r-top h2{
+  color: #f7b68e;
+}
+
+.content1 .con1-right .c1r-top img {
+  width: 1.5rem;
+  box-sizing: border-box;
+  padding-bottom: 0.1rem;
+}
+
+.content1 .con1-right .c1r-bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.content1 .con1-right .c1r-bottom h2{
+  color: #32a7da;
+}
+
+.content1 .con1-right .c1r-bottom img {
+  width: 1.5rem;
+  box-sizing: border-box;
+  padding: 0.1rem;
+  padding-bottom: 0;
+}
+/* content2 */
+.content2,.content3{
+  width: 100%;
+  padding: 0.1rem;
+  box-sizing: border-box;
+  border-bottom: 0.1rem solid #dedede;
+}
+.content2 img{
+  width: 100%;
+}
+
+/* content3 */
+
+.content3 .con3-title{
+  width: 100%;
+  height: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content3 .con3-title>div:first-of-type{
+  display: flex;
+  justify-content: flex-start;
+}
+.con3-title .header-pic{
+  font-size: 0;
+}
+.con3-title .header-pic img{
+  width: 0.6rem;
+}
+.con3-title .headLine{
+  font-size: 0.30rem;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+}
+.headLine span{
+  background-color: #ff5c5c;
+  display: inline-block;
+  line-height: 0.32rem;
+  padding: 0 0.1rem;
+  text-align: center;
+  font-size: 0.22rem;
+  color: #fff;
+  border-radius: 0.25rem;
+  margin-left: 0.3rem;
+}
+
+.con3-title .atten{
+  width: 0.96rem;
+  height: 0.34rem;
+  text-align: center;
+  box-sizing: border-box;
+  color: #ff5c5c;
+  border: 1px solid #ff5c5c;
+  border-radius: 0.1rem;
+  line-height: 0.32rem;
+}
+
+.content3>p{
+  font-size: 0.26rem;
+  line-height: 0.4rem;
+  color: #666;
+  margin-bottom: 0.15rem;
+}
+
+.con3-img {
+  position: relative;
+  font-size: 0;
+}
+
+.con3-img .star{
+  position: absolute;
+  top: 0.15rem;
+  right: 0.15rem;
+  font-size: 0;
+}
+.con3-img .star img{
+  width: 0.26rem;
+}
+.con3-img img{
+  width: 100%;
+}
+.content3 .qiang{
+  display: flex;
+  justify-content: flex-end;
+}
+.content3 .qiang>div{
+  width: 3.22rem;
+  height: 0.43rem;
+  font-size: 0.26rem;
+  background-color: #ff5c5c;
+  margin: 0.1rem 0;
+  border-radius: 0.08rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+.content3 .qiang>div .price{
+  width: 2rem;
+  height: 0.34rem;
+  background-color: #fff;
+  margin-left: -0.1rem;
+  border-radius: 0.08rem;
+  color: #ff5c5c;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around
+}
+.content3 .qiang>div .price del{
+  color: #999;
+  font-weight: normal;
+}
+
+.content3 .con3-foot{
+  border-top: 1px solid #dedede;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+  height: 0.65rem;
+}
+
+.con3-foot span{
+  color: #ff5c5c;
+}
+
+.con3-foot span:before {
+  content: "";
+  display: inline-block;
+  width: 0.25rem;
+  height: 0.2rem;
+  margin-right: 0.1rem;
+  background:url("../images/jiantou (1).png") no-repeat center center;
+  background-size: cover;
+  vertical-align: -0.03rem;
+}
+
+.con3-foot div:before{
+  content: "";
+  display: inline-block;
+  width: 0.05rem;
+  height: 0.05rem;
+  border-top: 0.05rem solid #999;
+  border-bottom: 0.05rem solid #999;
+  border-left: 0.08rem solid #999;
+  border-right: 0.08rem solid #999;
+  border-radius: 0.5rem;
+}
+
+.content3 .con3-img-list{
+  width: 100%;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content3 .con3-img-list div{
+  width: 3.6rem;
+}
+
+.content3 .con3-img-list img{
+  width: 100%;
+}
+
+.content3 .con3-foot-end{
+  display: flex;
+  justify-content: flex-end;
+}
+.content3 .con3-foot-end div{
+  margin-left: 0.1rem;
+}
+
+.content3 .con3-foot-end .mes:before{
+  content: "";
+  display: inline-block;
+  vertical-align: -0.05rem;
+  border: none;
+  width: 0.25rem;
+  height: 0.25rem;
+  background: url(../images/hun18_39.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+
+/* load */
+
+.load{
+  width: 100%;
+  text-align: center;
+  font-size: 0.2rem;
+  color: #666;
+  background: #dedede;
+  line-height: 0.5rem;
+}
+.load div{
+  width: 100%;
+  height: 1rem;
+}
+
+/* 底部 */
+
+.foot-list{
+  height: 1rem;
+  width: 100%;
+  border-bottom: none;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+.foot-list ul{
+  width: 100%;
+  height: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foot-list ul li{
+  width: 0.85rem;
+  text-align: center;
+  color: #333;
+}
+.foot-list ul li .active{
+  color: #ff5c5c;
+}
+.foot-list ul li img{
+  width: 0.5rem;
+}
+
+/* cb */
+.cb{
+  position: fixed;
+  bottom: 1.2rem;
+  right: 0.3rem;
+  font-size: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.cb img{
+  width: 0.65rem;
+}
