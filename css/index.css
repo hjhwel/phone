@@ -11,15 +11,18 @@ li {
 body {
   font-size: 0.2rem;
 }
-.mb1{
+.mb1 {
   margin-bottom: 0.1rem;
 }
-.mr5{
+
+.mr5 {
   margin-right: 0.05rem;
 }
-.ml5{
+
+.ml5 {
   margin-left: 0.05rem;
 }
+
 .nav {
   width: 100%;
   height: 0.85rem;
@@ -92,7 +95,7 @@ body {
   background-size: cover;
 }
 
-#view{
+#view {
   position: relative;
   overflow: auto;
   width: 100%;
@@ -102,6 +105,8 @@ body {
 .banner {
   margin-top: 0.07rem;
   position: relative;
+  width: 100%;
+  font-size: 0;
 }
 
 .banner img {
@@ -109,17 +114,21 @@ body {
   vertical-align: top;
 }
 
-.banner .ban-img li {
-  display: none;
+.ban-img {
+  width: 800%;
+  font-size: 0;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0;
 }
 
-.banner .ban-img .active {
-  display: block;
+.ban-img li {
+  width: 7.5rem;
 }
 
 .banner .ban-cir {
   position: absolute;
-  width: 0.54rem;
+  width: 2rem;
   display: flex;
   justify-content: space-between;
   bottom: 0.1rem;
@@ -133,11 +142,13 @@ body {
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.5;
+  transition: all 0.3s;
 }
 
-.banner .ban-cir .current{
+.banner .ban-cir .current {
   background-color: #fff;
   opacity: 1;
+  transform: scale(1.5);
 }
 
 /* serve-list */
@@ -196,9 +207,10 @@ body {
   box-sizing: border-box;
 }
 
-.content1 .con1-left h2{
+.content1 .con1-left h2 {
   color: #ff5c5c;
 }
+
 .content1 .con1-left img {
   width: 100%;
   padding-right: 0.1rem;
@@ -216,7 +228,8 @@ body {
   border-bottom: 1px solid #dedede;
   display: flex;
 }
-.content1 .con1-right .c1r-top h2{
+
+.content1 .con1-right .c1r-top h2 {
   color: #f7b68e;
 }
 
@@ -232,7 +245,7 @@ body {
   display: flex;
 }
 
-.content1 .con1-right .c1r-bottom h2{
+.content1 .con1-right .c1r-bottom h2 {
   color: #32a7da;
 }
 
@@ -242,43 +255,50 @@ body {
   padding: 0.1rem;
   padding-bottom: 0;
 }
+
 /* content2 */
-.content2,.content3{
+.content2,
+.content3 {
   width: 100%;
   padding: 0.1rem;
   box-sizing: border-box;
   border-bottom: 0.1rem solid #dedede;
 }
-.content2 img{
+
+.content2 img {
   width: 100%;
 }
 
 /* content3 */
-
-.content3 .con3-title{
+.content3 .con3-title {
   width: 100%;
   height: 0.95rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.content3 .con3-title>div:first-of-type{
+
+.content3 .con3-title>div:first-of-type {
   display: flex;
   justify-content: flex-start;
 }
-.con3-title .header-pic{
+
+.con3-title .header-pic {
   font-size: 0;
 }
-.con3-title .header-pic img{
+
+.con3-title .header-pic img {
   width: 0.6rem;
 }
-.con3-title .headLine{
+
+.con3-title .headLine {
   font-size: 0.30rem;
   padding: 0.1rem;
   display: flex;
   align-items: center;
 }
-.headLine span{
+
+.headLine span {
   background-color: #ff5c5c;
   display: inline-block;
   line-height: 0.32rem;
@@ -290,7 +310,7 @@ body {
   margin-left: 0.3rem;
 }
 
-.con3-title .atten{
+.con3-title .atten {
   width: 0.96rem;
   height: 0.34rem;
   text-align: center;
@@ -301,7 +321,7 @@ body {
   line-height: 0.32rem;
 }
 
-.content3>p{
+.content3>p {
   font-size: 0.26rem;
   line-height: 0.4rem;
   color: #666;
@@ -313,23 +333,27 @@ body {
   font-size: 0;
 }
 
-.con3-img .star{
+.con3-img .star {
   position: absolute;
   top: 0.15rem;
   right: 0.15rem;
   font-size: 0;
 }
-.con3-img .star img{
+
+.con3-img .star img {
   width: 0.26rem;
 }
-.con3-img img{
+
+.con3-img img {
   width: 100%;
 }
-.content3 .qiang{
+
+.content3 .qiang {
   display: flex;
   justify-content: flex-end;
 }
-.content3 .qiang>div{
+
+.content3 .qiang>div {
   width: 3.22rem;
   height: 0.43rem;
   font-size: 0.26rem;
@@ -342,7 +366,7 @@ body {
   color: #fff;
 }
 
-.content3 .qiang>div .price{
+.content3 .qiang>div .price {
   width: 2rem;
   height: 0.34rem;
   background-color: #fff;
@@ -353,12 +377,13 @@ body {
   display: flex;
   justify-content: space-around
 }
-.content3 .qiang>div .price del{
+
+.content3 .qiang>div .price del {
   color: #999;
   font-weight: normal;
 }
 
-.content3 .con3-foot{
+.content3 .con3-foot {
   border-top: 1px solid #dedede;
   display: flex;
   justify-content: space-between;
@@ -367,7 +392,7 @@ body {
   height: 0.65rem;
 }
 
-.con3-foot span{
+.con3-foot span {
   color: #ff5c5c;
 }
 
@@ -377,12 +402,12 @@ body {
   width: 0.25rem;
   height: 0.2rem;
   margin-right: 0.1rem;
-  background:url("../images/jiantou (1).png") no-repeat center center;
+  background: url("../images/jiantou (1).png") no-repeat center center;
   background-size: cover;
   vertical-align: -0.03rem;
 }
 
-.con3-foot div:before{
+.con3-foot div:before {
   content: "";
   display: inline-block;
   width: 0.05rem;
@@ -394,30 +419,32 @@ body {
   border-radius: 0.5rem;
 }
 
-.content3 .con3-img-list{
+.content3 .con3-img-list {
   width: 100%;
   font-size: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.content3 .con3-img-list div{
+
+.content3 .con3-img-list div {
   width: 3.6rem;
 }
 
-.content3 .con3-img-list img{
+.content3 .con3-img-list img {
   width: 100%;
 }
 
-.content3 .con3-foot-end{
+.content3 .con3-foot-end {
   display: flex;
   justify-content: flex-end;
 }
-.content3 .con3-foot-end div{
+
+.content3 .con3-foot-end div {
   margin-left: 0.1rem;
 }
 
-.content3 .con3-foot-end .mes:before{
+.content3 .con3-foot-end .mes:before {
   content: "";
   display: inline-block;
   vertical-align: -0.05rem;
@@ -429,8 +456,7 @@ body {
 }
 
 /* load */
-
-.load{
+.load,.footload {
   width: 100%;
   text-align: center;
   font-size: 0.2rem;
@@ -438,41 +464,40 @@ body {
   background: #dedede;
   line-height: 0.5rem;
 }
-.load div{
-  width: 100%;
-  height: 1rem;
-}
+
 
 /* 底部 */
-
-.foot-list{
+.foot-list {
   height: 1rem;
   width: 100%;
   border-bottom: none;
   border-top: 1px solid #ccc;
   background-color: #fff;
 }
-.foot-list ul{
+
+.foot-list ul {
   width: 100%;
   height: 1rem;
   justify-content: space-around;
   align-items: center;
 }
 
-.foot-list ul li{
+.foot-list ul li {
   width: 0.85rem;
   text-align: center;
   color: #333;
 }
-.foot-list ul li .active{
+
+.foot-list ul li .active {
   color: #ff5c5c;
 }
-.foot-list ul li img{
+
+.foot-list ul li img {
   width: 0.5rem;
 }
 
 /* cb */
-.cb{
+.cb {
   position: fixed;
   bottom: 1.2rem;
   right: 0.3rem;
@@ -481,6 +506,7 @@ body {
   overflow: hidden;
   display: none;
 }
-.cb img{
+
+.cb img {
   width: 0.65rem;
 }
